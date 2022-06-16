@@ -1,0 +1,22 @@
+$color-background: #fafafa;
+$color-footer-mobile-1: darken($color-background, 2%);
+$color-footer-mobile-2: darken($color-background, 10%);
+$color-background-code: darken($color-background, 2%);
+$color-border: #666;
+$color-meta: #666;
+$color-meta-code: lighten($color-meta, 10%);
+$color-link: rgba(86, 124, 119, 0.4);
+$color-text: #22272a;
+$color-accent-1: rgb(255, 0, 43);
+$color-accent-2: rgba(86, 124, 119, 0.8);
+$color-accent-3: #666;
+$color-quote: rgb(255, 0, 43);
+$logo-grayout: false;
+
+.content a.icon:hover {
+  color: $color-accent-1 !important;
+}
+
+.content a.job-title:hover {
+  background-color: $color-accent-1 !important;
+}

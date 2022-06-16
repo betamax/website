@@ -1,0 +1,36 @@
+{
+  "list": [
+    {
+      "name": "Lateral GmbH",
+      "year": "2013 - Now",
+      "url": "https://www.lateral.io/",
+      "desc": "Co-Founder & CTO of a machine learning based start-up. Helping to build the company from an initial concept phase to a production SaaS app. Leading a team of developers and developing the product in collaboration with creative and business counterparts."
+    },
+    {
+      "name": "Freelance full-stack developer",
+      "year": "2013 - Now",
+      "desc": "Working independently with clients to assist them in the building and running of their web applications. Realising ideas into running applications in an efficient and iterative way."
+    },
+    {
+      "name": "Geo ExPro",
+      "year": "2013 - 2022",
+      "url": "https://www.geoexpro.com/",
+      "desc": "Developing and maintaining the custom CMS of an online magazine. Working on the front-end and back-end (Ruby on Rails) and maintaining the hosting using Heroku."
+    },
+    {
+      "name": "Willem & Øen",
+      "year": "2012 - 2013",
+      "desc": "Creating a variety of websites for musicians and artists, mostly using PHP, HTML, CSS and Javascript. Working in an interative process to realise the designs."
+    },
+    {
+      "name": "Disturb Media",
+      "year": "2010 - 2012",
+      "desc": "Working in a small team to create interactive advertisements for various large clients and other ad agencies."
+    },
+    {
+      "name": "Eclectic Productions",
+      "year": "2008 - 2010",
+      "desc": "Working part-time to maintain and develop the website of an online community radio station."
+    }
+  ]
+}

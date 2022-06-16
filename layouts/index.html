@@ -1,0 +1,92 @@
+{{ define "main" }}
+  <section id="about">
+  {{ if isset .Site.Params "description" }}
+    {{ .Site.Params.description | $.Page.RenderString }}
+  {{ end }}
+  {{ if isset .Site.Params "social" }}
+      <p>Find me on
+      {{ $length := (len .Site.Params.social) }}
+      {{ range $index, $elem := .Site.Params.social}}
+      {{ if eq $elem.name "email" }}
+        <a class="icon" target="_blank" rel="noopener" href="mailto:{{ $elem.link }}" aria-label="Email">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+        </a>
+        {{ else if eq $elem.name "rss" }}
+        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}" aria-label="RSS">
+          <i class="fas fa-rss" aria-hidden="true"></i>
+        </a>
+        {{ else if eq $elem.name "scholar" }}
+        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}" aria-label="Google Scholar">
+          <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+        </a>
+        {{ else }}
+        <a class="icon" target="_blank" rel="noopener" href="{{ $elem.link }}" aria-label="{{ $elem.name }}">
+          <i class="fab fa-{{ lower $elem.name }}" aria-hidden="true"></i>
+        </a>
+        {{ end }}
+        {{ if (lt (add $index 2) $length) }}
+          {{- print " , " -}}
+        {{ else if (lt (add $index 1) $length) }}
+          {{- print " and " -}}
+        {{ else }}
+          {{- print "." -}}
+        {{ end }}
+      {{ end }}
+      </p>
+  {{ end }}
+  {{ partial "optional-about.html" . }}
+  </section>
+
+  {{ $projectsUrl := "#" }}
+  {{ if isset .Site.Params "projectsurl" }}
+    {{ $projectsUrl = .Site.Params.projectsUrl }}
+  {{ end }}
+  <section id="projects">
+    <span class="h1"><a href="{{ $projectsUrl }}">Experience</a></span>
+    <ul class="post-list">
+        {{ range .Site.Data.experience.list }}
+        <li class="post-item experience-item">
+          <div class="dates">
+            <time class="start">{{ .year }}</time>
+          </div>
+          {{ if .url }}
+            <a href="{{ .url }}" class="job-title">{{ .name }}</a>
+          {{ else }}
+            <span class="job-title">{{ .name }}</span>
+          {{ end }}
+          {{ if ne .desc "" }}
+          <div class="desc">
+            {{ .desc | markdownify }}
+          </div>
+          {{ end }}
+        </li>
+        {{ end }}
+    </ul>
+  </section>
+
+  <section id="writing">
+    <span class="h1"><a href="{{ .Site.Params.mainSection | absURL }}">{{ .Site.Params.mainSectionTitle | default "Projects" }}</a></span>
+    {{ $dataFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+    {{ $mainPosts := (sort ( where site.RegularPages "Type" "in" site.Params.mainSections ) ".File.TranslationBaseName" "desc") }}
+    <ul class="post-list">
+      {{ range (.Paginate $mainPosts).Pages }}
+        <li class="post-item">
+          <div class="dates">
+            {{ $dateStart := .Date.Format "2006" }}
+            <time class="start">{{ .Date.Format "2006" }}</time>
+            {{ if (isset .Params "date_end") }}
+              {{ $dateEnd := dateFormat "2006" .Params.date_end }}
+              {{ if ne $dateEnd $dateStart }}
+                - <time class="end">{{ $dateEnd }}</time>
+              {{ end}}
+            {{ else }}
+            - Now
+            {{ end }}
+          </div>
+          {{ $link := .Params.link | default .Permalink }}
+          <span><a href="{{ $link }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end }}</a>: {{ .Params.description }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
