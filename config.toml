@@ -1,5 +1,5 @@
 theme = "cactus"
-baseURL = 'https://maxnov.com/'
+baseURL = '/'
 languageCode = 'en-gb'
 title = 'Max Novakovic'
 
