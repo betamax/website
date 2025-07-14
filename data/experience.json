@@ -1,15 +1,21 @@
 {
   "list": [
     {
-      "name": "Lateral GmbH",
-      "year": "2013 - Now",
-      "url": "https://www.lateral.io/",
-      "desc": "Co-Founder & CTO of a machine learning based start-up. Helping to build the company from an initial concept phase to a production SaaS app. Leading a team of developers and developing the product in collaboration with creative and business counterparts."
-    },
-    {
       "name": "Freelance full-stack developer",
       "year": "2013 - Now",
       "desc": "Working independently with clients to assist them in the building and running of their web applications. Realising ideas into running applications in an efficient and iterative way."
+    },
+    {
+      "name": "Coordination.network",
+      "year": "2022 - Now",
+      "url": "https://www.coordination.network/",
+      "desc": "Co-initiator of open-source platform aiming to help solve complex problems more efficiently and collaboratively."
+    },
+    {
+      "name": "Lateral GmbH",
+      "year": "2013 - 2025",
+      "url": "https://www.lateral.io/",
+      "desc": "Co-Founder & CTO of a machine learning based start-up. Helping to build the company from an initial concept phase to a production SaaS app. Leading a team of developers and developing the product in collaboration with creative and business counterparts."
     },
     {
       "name": "Geo ExPro",

@@ -22,3 +22,8 @@ title = 'Max Novakovic'
 [[params.social]]
   name = "linkedin"
   link = "https://www.linkedin.com/in/max-novakovic/"
+
+[[menu.main]]
+  name = "Imprint"
+  url = "/imprint/"
+  weight = 10
