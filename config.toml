@@ -4,26 +4,27 @@ languageCode = 'en-gb'
 title = 'Max Novakovic'
 
 [params]
-  colortheme = "classic" # dark, light, white, or classic
-  description = "Experienced full-stack engineer currently available for freelance work. I can work on all the technical aspects needed in order to get your new product, app or business idea off the ground. Get in touch!"
-  # I can build your entire project quickly and reliably, get in touch!
-  mainSection = "project"
-  logo = "images/diamond.png"
-  css = ["css/custom.css"]
+colortheme = "classic" # dark, light, white, or classic
+# description = "Experienced full-stack engineer currently available for freelance work. I can work on all the technical aspects needed in order to get your new product, app or business idea off the ground. Get in touch!"
+description = "Full-stack engineer with a passion for building innovative products. I've co-founded a machine-learning startup, worked as a fractional CTO and created MVPs that helped validate ideas and secure funding. Available for freelance work."
+# I can build your entire project quickly and reliably, get in touch!
+mainSection = "project"
+logo = "images/diamond.png"
+css = ["css/custom.css"]
 
 [[params.social]]
-  name = "email"
-  link = "max@maxnov.com"
+name = "email"
+link = "max@maxnov.com"
 
 [[params.social]]
-  name = "github"
-  link = "https://github.com/betamax"
+name = "github"
+link = "https://github.com/betamax"
 
 [[params.social]]
-  name = "linkedin"
-  link = "https://www.linkedin.com/in/max-novakovic/"
+name = "linkedin"
+link = "https://www.linkedin.com/in/max-novakovic/"
 
 [[menu.main]]
-  name = "Imprint"
-  url = "/imprint/"
-  weight = 10
+name = "Imprint"
+url = "/imprint/"
+weight = 10
