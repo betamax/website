@@ -44,7 +44,7 @@
   <section id="projects">
     <span class="h1"><a href="{{ $projectsUrl }}">Experience</a></span>
     <ul class="post-list">
-        {{ range .Site.Data.experience.list }}
+        {{ range hugo.Data.experience.list }}
         <li class="post-item experience-item">
           <div class="dates">
             <time class="start">{{ .year }}</time>

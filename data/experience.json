@@ -1,13 +1,25 @@
 {
   "list": [
     {
+      "name": "Axiom",
+      "year": "2026 - Now",
+      "url": "https://www.axiomcasts.com/",
+      "desc": "Engineering Lead. Building play-money prediction markets that partner with publishers to deepen how readers engage with the news. Running the tech stack and managing a distributed team."
+    },
+    {
+      "name": "Bonanza Studios",
+      "year": "2023 - 2025",
+      "url": "https://www.bonanza-studios.com/",
+      "desc": "Fractional Tech Lead for a UX design and app-development studio."
+    },
+    {
       "name": "Freelance full-stack developer",
-      "year": "2022 - Now",
+      "year": "2022 - 2026",
       "desc": "Working with founders to turn ideas into working products. Including building MVPs to test market fit, creating technical specs for fundraising, and joining as the first developer to establish the technical foundation."
     },
     {
       "name": "Coordination.network",
-      "year": "2022 - Now",
+      "year": "2022 - 2025",
       "url": "https://www.coordination.network/",
       "desc": "Co-initiator of open-source platform aiming to help solve complex problems more efficiently and collaboratively."
     },
@@ -16,12 +28,6 @@
       "year": "2013 - 2025",
       "url": "https://www.lateral.io/",
       "desc": "Co-Founder & CTO. Built a machine learning SaaS from concept to production. Led technical development and grew the team from zero to working product."
-    },
-    {
-      "name": "Geo ExPro",
-      "year": "2013 - 2022",
-      "url": "https://www.geoexpro.com/",
-      "desc": "Developed and maintained the custom CMS for an online magazine. Built both front-end and back-end (Ruby on Rails) and managed hosting on Heroku."
     },
     {
       "name": "Willem & Øen",

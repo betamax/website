@@ -1,0 +1,66 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[build.environment]
+HUGO_VERSION = "0.163.3"
+NODE_VERSION = "22"
+
+# Link-only project pages have no body content — send the indexed empty
+# pages straight to the real project (GitHub / archive) with a 301.
+[[redirects]]
+from = "/project/2010-01-01-getimagedata/"
+to = "https://github.com/betamax/getImageData"
+status = 301
+force = true
+
+[[redirects]]
+from = "/project/2010-12-23-merry-colour-blindness/"
+to = "https://web.archive.org/web/20150311081021/http://disturbmedia.com/blog/post/merry-colour-blindness/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/project/2020-01-01-librefm/"
+to = "https://github.com/betamax/libre-fm-listenbrainz-sync"
+status = 301
+force = true
+
+[[redirects]]
+from = "/project/2025-07-07-pds-admin/"
+to = "https://github.com/betamax/pds-admin"
+status = 301
+force = true
+
+# The /project/ section list is a thin auto-generated page nothing links to.
+[[redirects]]
+from = "/project/"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/project/page/1/"
+to = "/"
+status = 301
+force = true
+
+# Paginator's first page duplicates the homepage.
+[[redirects]]
+from = "/page/1/"
+to = "/"
+status = 301
+force = true
+
+# Thin tag/category pages are no longer generated — bounce any indexed ones home.
+[[redirects]]
+from = "/categories/*"
+to = "/"
+status = 301
+force = true
+
+[[redirects]]
+from = "/tags/*"
+to = "/"
+status = 301
+force = true

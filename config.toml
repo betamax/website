@@ -1,12 +1,16 @@
 theme = "cactus"
 baseURL = '/'
-languageCode = 'en-gb'
+locale = 'en-gb'
 title = 'Max Novakovic'
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+# Portfolio site, not a blog — skip thin auto-generated tag/category pages.
+disableKinds = ['taxonomy', 'term']
 
 [params]
 colortheme = "classic" # dark, light, white, or classic
-# description = "Experienced full-stack engineer currently available for freelance work. I can work on all the technical aspects needed in order to get your new product, app or business idea off the ground. Get in touch!"
-description = "Full-stack engineer with a passion for building innovative products. I've co-founded a machine-learning startup, worked as a fractional CTO and created MVPs that helped validate ideas and secure funding. Available for freelance work."
+description = "Full-stack engineer with a passion for building innovative products. I've co-founded a machine-learning startup, worked as a fractional CTO, and now engineering lead at Axiom."
 # I can build your entire project quickly and reliably, get in touch!
 mainSection = "project"
 logo = "images/diamond.png"
